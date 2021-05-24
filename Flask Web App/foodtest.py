@@ -26,13 +26,8 @@ def home():
 def upload():
     if request.method=="POST":
 
-        img=request.files["file"]
-        img = Image.open(img).convert("RGB")
-        im = img.resize((224, 224))
-        #if save
-        #filename=secure_filename(img.filename)
-        #img.save(filename)
-        #img=image.load_img(filename,target_size=(224,224))
+        im=request.files["file"]
+        
         
 
         my_dict ={}
